@@ -14,5 +14,5 @@ class Topping {
     String toppingName
 
     @Column(name = 'price', nullable = false)
-    Integer price
+    Double price
 }

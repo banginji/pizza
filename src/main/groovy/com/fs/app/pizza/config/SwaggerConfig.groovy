@@ -14,9 +14,10 @@ class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .ignoredParameterTypes(MetaClass)
                 .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage('com.fs.app.pizza.controller'))
+                .paths(PathSelectors.ant('/v1/**'))
                 .build();
     }
 }
