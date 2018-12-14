@@ -1,7 +1,7 @@
 # pizza application
 
 ### How to run the application
-- Navigate to root of the directory
+- Navigate to root of the project
 - Run the command `./gradlew clean build bootRun`
 
 ### How to invoke the APIs
